@@ -22,7 +22,20 @@ Print the username of current user
 [user@host ~]$ whoami
 user
 ```
-```bash
 How to combine more than one command in a single line
+```bash
 [user@host ~]$ command1; command2
+```
+Display current date and time
+```bash
+[user@host ~]$ date
+Sun 22 Feb 2026 05:21:42 PM +08
+[user@host ~]$ date +%R
+17:24
+[user@host ~]$ date +%x
+22/02/2026
+```
+
+```bash
+
 ```
