@@ -17,9 +17,11 @@
 | [history](#history) |
 | [Shortcuts](#shortcuts) |
 
+Print the username of current user
 ```bash
-pwd
-whoami
-hostnamectl
-date
-uptime
+[user@host ~]$ whoami
+user
+
+how to combine more than one command in a single line
+```bash
+user@host]$ command1;command2
