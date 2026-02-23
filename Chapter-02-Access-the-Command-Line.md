@@ -1,7 +1,8 @@
 # Chapter 2: Access the Command Line
 
 ## Goals
-- 
+After completing this section, you should be able to save time running commands from a shell
+prompt using Bash shortcuts.
 
 ## Key Commands
 | **Main commands** |
