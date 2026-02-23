@@ -22,6 +22,7 @@ Print the username of current user
 [user@host ~]$ whoami
 user
 
-how to combine more than one command in a single line
+How to combine more than one command in a single line
+
 ```bash
-user@host]$ command1;command2
+[user@host ~]$ command1; command2
