@@ -1,9 +1,11 @@
 # RED-HAT-SYSTEM-ADMINISTRATION-I-RH124
-A learning guide to keep track of the content discussed and commands used.
+**This course is based on Red Hat® Enterprise Linux 9.3 But Also Applies to Red Hat® Enterprise Linux 10.X**  
+A learning guide to keep track of the content and commands for RH124.  
 
-Objective:
+**Objective:**
 Gain sufficient skill to perform core system administration tasks on Red Hat Enterprise Linux. 
 Build foundational skills needed by an RHCSA certified Red Hat Enterprise Linux system administrator.
+
 
 ---
 
@@ -23,3 +25,5 @@ Build foundational skills needed by an RHCSA certified Red Hat Enterprise Linux 
 - [Chapter 13: Archive and Transfer Files](./Chapter-13-Archive-and-Transfer-Files.md)
 - [Chapter 14: Install and Update Software](./Chapter-14-Install-and-Update-Software.md)
 - [Chapter 15: Access Linux File Systems](./Chapter-15-Access-Linux-File-Systems.md)
+---
+## YouTube reference: https://youtu.be/eGbNXqPdUa4?si=VgILVVLUC-gbbVtw
