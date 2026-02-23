@@ -54,3 +54,58 @@ for GNU/Linux 3.2.0, BuildID[sha1]=a3637110e27e9a48dced9f38b4ae43388d32d0e4,
 [user@host ~]$ file /home
 /home: directory
 ```
+Viewing the contents of a file
+```bash
+[user@host ~]$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+...output omitted...
+```
+To view the contents of multiple files
+```bash
+[user@host ~]$ cat file1 file2
+Hello World!!
+Introduction to Linux commands.
+```
+Display first 10 lines of a file
+```bash
+[user@host ~]$ head /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+```
+Display last 3 lines of a file
+```bash
+[user@host ~]$ tail -n 3 /etc/passwd
+gdm:x:42:42::/var/lib/gdm:/sbin/nologin
+gnome-initial-setup:x:977:977::/run/gnome-initial-setup/:/sbin/nologin
+avahi:x:70:70:Avahi mDNS/DNS-SD Stack:/var/run/avahi-daemon:/sbin/nologin
+```
+**Counts lines, words, and characters** in a file. Use the -l, -w, or -c options to display only the given number of lines, words, or characters, respectively.
+```bash
+[user@host ~]$ wc /etc/passwd
+  45  102 2480 /etc/passwd
+[user@host ~]$ wc -l /etc/passwd ; wc -l /etc/group
+45 /etc/passwd
+70 /etc/group
+[user@host ~]$ wc -c /etc/group /etc/hosts
+ 966 /etc/group
+ 516 /etc/hosts
+1482 total
+```
+**TAB COMPLETION**
+ Allows a user to quickly complete commands or file names after they have typed
+enough at the prompt to make it unique. If the characters typed are not unique, pressing the Tab
+key twice displays all commands that begin with the characters already typed.
+
+-Single press completes as much of the file name as possible
+-Double press list all of the files that are matched by the current pattern.
