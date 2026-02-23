@@ -109,3 +109,59 @@ key twice displays all commands that begin with the characters already typed.
 
 - Single press completes as much of the file name as possible
 - Double press list all of the files that are matched by the current pattern.
+
+Writing long commands in multiple lines
+```bash
+[user@host]$ head -n 3 \
+> /usr/share/dict/words \
+> /usr/share/dict/linux.words
+==> /usr/share/dict/words <==
+1080
+10-point
+10th
+==> /usr/share/dict/linux.words <==
+1080
+10-point
+10th
+[user@host ~]$ 
+```
+Display the Command History
+```bash
+[user@host ~]$ history
+...output omitted...
+   23  clear
+   24  who
+   25  pwd
+   26  ls /etc
+   27  uptime
+   28  ls -l
+   29  date
+   30  history
+[user@host ~]$ !ls
+ls -l
+total 0
+drwxr-xr-x. 2 user user 6 Mar 29 21:16 Desktop
+...output omitted...
+[user@host ~]$ !26
+ls /etc
+abrt                     hosts                     pulse
+adjtime                  hosts.allow               purple
+aliases                  hosts.deny                qemu-ga
+...output omitted...
+```
+- The **!number** command expands to the command matching the
+number specified.
+- The **!string** command expands to the most recent command that begins with
+the string specified.
+
+### Useful Command-line Editing Shortcuts
+
+| SHORTCUT | DESCRIPTION |
+|---|---|
+| `Ctrl + A` | Jump to the beginning of the command line. |
+| `Ctrl + E` | Jump to the end of the command line. |
+| `Ctrl + U` | Clear from the cursor to the beginning of the command line. |
+| `Ctrl + K` | Clear from the cursor to the end of the command line. |
+| `Ctrl + Left Arrow` | Jump to the beginning of the previous word on the command line. |
+| `Ctrl + Right Arrow` | Jump to the end of the next word on the command line. |
+| `Ctrl + R` | Search the history list of commands for a pattern. |
