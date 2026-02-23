@@ -44,7 +44,13 @@ New password: new_password
 Retype new password: new_password
 passwd: all authentication tokens updated successfully.
 ```
-asdf
+Display file type and its name
 ```bash
-
+[user@host ~]$ file /bin/passwd
+/bin/passwd: setuid ELF 64-bit LSB shared object, x86-64, version 1 
+(SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, 
+for GNU/Linux 3.2.0, BuildID[sha1]=a3637110e27e9a48dced9f38b4ae43388d32d0e4,
+ stripped
+[user@host ~]$ file /home
+/home: directory
 ```
