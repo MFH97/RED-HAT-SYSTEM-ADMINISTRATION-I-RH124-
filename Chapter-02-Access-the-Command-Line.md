@@ -102,10 +102,10 @@ avahi:x:70:70:Avahi mDNS/DNS-SD Stack:/var/run/avahi-daemon:/sbin/nologin
  516 /etc/hosts
 1482 total
 ```
-**TAB COMPLETION**
- Allows a user to quickly complete commands or file names after they have typed
+**TAB COMPLETION**  
+Allows a user to quickly complete commands or file names after they have typed
 enough at the prompt to make it unique. If the characters typed are not unique, pressing the Tab
 key twice displays all commands that begin with the characters already typed.
 
--Single press completes as much of the file name as possible
--Double press list all of the files that are matched by the current pattern.
+- Single press completes as much of the file name as possible
+- Double press list all of the files that are matched by the current pattern.
