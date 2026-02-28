@@ -21,3 +21,10 @@ links.
 - Efficiently run commands affecting many files
 by using pattern matching features of the Bash
 shell.
+
+## The File System Hierarchy
+<img width="573" height="219" alt="image" src="https://github.com/user-attachments/assets/583891d2-612f-4502-95cf-2b48369793d8" />
+#file-system hierarchy = single inverted tree of directories  
+This tree is inverted because the root of the
+tree is said to be at the top of the hierarchy, and the branches of directories and subdirectories
+stretch below the root
